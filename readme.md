@@ -27,8 +27,8 @@ HAL, HTTP Basic Authentication, REST UI, RESTful Web Services, Serialization )
 8. You can get to work modifying the app by navigating to the app directory in your terminal.
 
 ```
-> npm install
-> gulp
+$ npm install
+$ gulp
 ```
 
 The files you want to work with are probably in the scss and js/src/app folders.
