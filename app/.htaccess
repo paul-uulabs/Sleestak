@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# if request is not for the /sub-dir/
+RewriteCond %{REQUEST_URI} !^/sub-dir/ [NC]
+# otherwise forward it to index.php
+RewriteRule . index.php
+</IfModule>

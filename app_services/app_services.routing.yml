@@ -1,0 +1,9 @@
+# APP API endpoints
+
+app_services.pages:
+  path: 'app-api/pages.json'
+  defaults: { _controller: '\Drupal\app_services\Controller\APPAPIController::get_pages' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+

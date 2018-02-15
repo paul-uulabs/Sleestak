@@ -1,0 +1,5 @@
+name: APP Services
+type: module
+description: Example APP RESTful API module.
+author: UU Labs
+core: 8.x

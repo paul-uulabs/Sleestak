@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url('../asset/ui/progress.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  transition: ease background-color 1s;
+  .main {
+    opacity: 0;
+  }
+}
+
+body .top-bar .top-bar-right {
+  padding-left:40px;
+}
+
+body.loading #activity-indicator {
+  background-image: url('../asset/ui/progress.gif');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+body.loggedin {
+  background-image: none;
+  background-color: #efefef;
+  .main {
+    opacity: 1;
+    transition: ease opacity 1s;
+  }
+}
+
+.top-bar-left {
+  #ica, #options {
+    float:left;
+    a.top-menu {
+      line-height:39px;
+      padding-bottom:0;
+      padding-top:0;
+    }
+    a {
+      font-size:.85rem;
+      text-transform:uppercase;
+    }
+  }
+  #logo {
+    border:0;
+    height:32px;
+    width:auto;
+  }
+}
+
+.top-bar {
+  padding:0;
+  height:39px;
+  select {
+    margin-bottom:0;
+  }
+  .input-group {
+    padding:0;
+    margin:0;
+  }
+  #configuration-status {
+    width:auto;
+  }
+}
+.card.palette {
+  position: relative;
+  z-index: 1;
+}
+
+.top-bar {
+  position: relative;
+  z-index: 10;
+}
+
+.card.palette {
+  width: 300px;
+}
+
+ul.main-menu {
+
+}
+
+.button {
+  text-transform: uppercase;
+}
+
+.main .callout {
+  margin-top:2rem;
+}
+
+body.in-frame {
+  background-color:#ffffff !important;
+  .top-bar {
+    display:none;
+  }
+  .main {
+    .cell.small-4 {
+      width:100% !important;
+    }
+    .callout {
+      margin-top:0;
+      border:0;
+      padding:0;
+      margin:0;
+    }
+  }
+}
+
+
+
+
